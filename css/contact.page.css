@@ -138,7 +138,7 @@ header form i:nth-child(2) {
   border: 1px solid #ff6600 !important;
   box-shadow: none;
 }
-.dark .contact-view .cont-details p a {
+.dark .contact-view .cont-details p a, .dark .contact-view .cont-details p {
   color: #ddd !important;
 }
 .dark .contact-us input,
@@ -211,7 +211,6 @@ section {
 .contact .container .header-title p {
   font-size: 18px;
   line-height: 28px;
-  color: rgba(22, 28, 45, 0.7);
 }
 
 .contact .twice-two {
@@ -318,14 +317,12 @@ section {
 
 .contact-view .cont-details h5 {
   font-size: 20px;
-  color: #232121 !important;
   font-weight: 600;
 }
 
 .contact-view .cont-details p {
   font-size: 18px;
   line-height: 28px;
-  color: rgba(22, 28, 45, 0.7) !important;
 }
 
 .contact-view .cont-details p a {

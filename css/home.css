@@ -175,6 +175,7 @@ html {
   background-color: #232220;
 }
 
+
 /* .dark .blog .col .comment .right a {
     color: white;
 } */
@@ -400,8 +401,11 @@ header .banner .banner-content .banner-info .btn {
   color: rgba(22, 28, 45, 0.7);
   text-align: left;
   font-size: 18px;
+  text-align: justify;
 }
-
+.offer .subscribe-cat p{
+  text-align: left;
+}
 /* MORE THAN  */
 .more {
   background-color: #ff6600;
@@ -533,6 +537,9 @@ header .banner .banner-content .banner-info .btn {
   margin-bottom: 15px;
   font-size: 20px;
   text-decoration: none;
+}
+.more .agent-block p{
+  text-align: justify;
 }
 
 /* POPULAR  */
@@ -1000,6 +1007,7 @@ footer .footer__logo h5 a:hover {
   font-size: 17px;
   line-height: 26px;
   color: #a5a2a1;
+  text-align: justify;
 }
 
 .footer__main ul .item-2 {
@@ -1246,20 +1254,25 @@ footer .footer__logo h5 a:hover {
     background-size: 245%;
     height: 440px;
   }
+  .popular .row {
+    gap: 0px;
 }
-@media screen and (max-width: 576px) {
-  .blog .address {
-    flex-direction: row;
-    line-height: 37px;
-    padding-top: 0 !important;
-  }
-  .blog .comment {
-    padding-bottom: 2px;
-  }
-  .testical .comment p {
-    max-width: 375px;
-  }
+.blog .address {
+  flex-direction: row;
+  line-height: 37px;
+  padding-top: 0 !important;
 }
+.blog .comment {
+  padding-bottom: 2px;
+}
+.testical .comment p {
+  max-width: 375px;
+}
+.contact_us .twice-two{
+  grid:none;
+}
+}
+
 @media screen and (max-width: 415px) {
   header {
     padding-top: 15px;
@@ -1344,8 +1357,8 @@ footer .footer__logo h5 a:hover {
     font-size: 12px;
   }
   .number {
-    margin-top: 320px;
-  }
+    margin-top: 420px;
+}
   .movie {
     padding: 0;
   }
@@ -1365,5 +1378,8 @@ footer .footer__logo h5 a:hover {
   }
   .testical .comment p {
     max-width: 375px;
+  }
+  .more .container-fluid .agent-block-image-inf p {
+    text-align: left;
   }
 }

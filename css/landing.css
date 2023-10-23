@@ -23,6 +23,7 @@ html {
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
@@ -166,7 +167,7 @@ html {
   background-color: #232220;
   color: white;
 }
-.dark .contact-view .cont-details p a {
+.dark .contact-view .cont-details p a, .dark .contact-view .cont-details p {
   color: #ddd !important;
 }
 
@@ -408,6 +409,7 @@ header .banner .banner-content .banner-info .btn {
   color: rgba(22, 28, 45, 0.7);
   text-align: left;
   font-size: 18px;
+  text-align: justify;
 }
 
 /* MORE THAN  */
@@ -541,6 +543,9 @@ header .banner .banner-content .banner-info .btn {
   margin-bottom: 15px;
   font-size: 20px;
   text-decoration: none;
+}
+.more .agent-block p{
+  text-align: justify;
 }
 
 /* TEAM */
@@ -1203,7 +1208,6 @@ section {
 .contact-view .cont-details p {
   font-size: 18px;
   line-height: 28px;
-  color: rgba(22, 28, 45, 0.7) !important;
 }
 
 .contact-view .cont-details p a {
@@ -1253,6 +1257,7 @@ footer .footer__logo h5 a:hover {
   font-size: 17px;
   line-height: 26px;
   color: #a5a2a1;
+  text-align: justify;
 }
 
 .footer__main ul .item-2 {
@@ -1292,7 +1297,9 @@ footer .footer__logo h5 a:hover {
 .footer__main li a {
   transition: all 0.5s;
 }
-
+.footer__main p{
+  text-align: justify;
+}
 .footer__main li:hover a {
   color: #ff6600;
 }
@@ -1505,20 +1512,25 @@ footer .footer__logo h5 a:hover {
     background-size: 245%;
     height: 440px;
   }
+  .popular .row {
+    gap: 0px;
 }
-@media screen and (max-width: 576px) {
-  .blog .address {
-    flex-direction: row;
-    line-height: 37px;
-    padding-top: 0 !important;
-  }
-  .blog .comment {
-    padding-bottom: 2px;
-  }
-  .testical .comment p {
-    max-width: 375px;
-  }
+.blog .address {
+  flex-direction: row;
+  line-height: 37px;
+  padding-top: 0 !important;
 }
+.blog .comment {
+  padding-bottom: 2px;
+}
+.testical .comment p {
+  max-width: 375px;
+}
+.contact_us .twice-two{
+  grid:none;
+}
+}
+
 @media screen and (max-width: 415px) {
   header {
     padding-top: 15px;
@@ -1580,6 +1592,9 @@ footer .footer__logo h5 a:hover {
   .offer .content .right p {
     text-align: justify;
   }
+  .offer .subscribe-cat p{
+    text-align: left;
+  }
   .more .container-fluid .agent-block-image {
     min-height: 370px;
   }
@@ -1589,6 +1604,7 @@ footer .footer__logo h5 a:hover {
   .popular .row {
     gap: 0;
   }
+  
   .popular .col .text {
     position: absolute;
     bottom: 8px;
@@ -1629,5 +1645,8 @@ footer .footer__logo h5 a:hover {
   .contact-view {
     grid-template-columns: 100%;
     grid-gap: 20px;
+  }
+  .more .container-fluid .agent-block-image-inf p {
+    text-align: left;
   }
 }
