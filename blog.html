@@ -84,6 +84,7 @@
           aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item "><a href="https://wp.w3layouts.com/diner/">Home</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
           </ol>
         </nav>
       </div>
@@ -97,11 +98,11 @@
           <h1 class="mb-5">
             Blog Posts </h1>
         </div>
-        <div class="row">
-          <div class="col-lg-8 pe-lg-4">
+        <div class="blog row">
+          <div class="blog_left col-lg-8 pe-lg-4">
             <div class="row">
               <!-- </article>#post-1 -->
-              <div class="col-md-6 item mb-4">
+              <div class="col-12 col-lg-6 item mb-4">
                 <article id="post-1" class="post-1 post__item">
                   <div class="card">
                     <div class="card-header p-0 position-relative">
@@ -147,7 +148,7 @@
                 </article>
               </div>
               <!-- </article>#post-2 -->
-              <div class="col-md-6 item mb-4">
+              <div class="col-12 col-lg-6 item mb-4">
                 <article id="post-1" class="post-1 post__item">
                   <div class="card">
                     <div class="card-header p-0 position-relative">
@@ -193,7 +194,7 @@
                 </article>
               </div>
               <!-- </article>#post-3 -->
-              <div class="col-md-6 item mb-4">
+              <div class="col-12 col-lg-6 item mb-4">
                 <article id="post-1" class="post-1 post__item">
                   <div class="card">
                     <div class="card-header p-0 position-relative">
@@ -239,7 +240,7 @@
                 </article>
               </div>
               <!-- </article>#post-4 -->
-              <div class="col-md-6 item mb-4">
+              <div class="col-12 col-lg-6 item mb-4">
                 <article id="post-1" class="post-1 post__item">
                   <div class="card">
                     <div class="card-header p-0 position-relative">
@@ -285,7 +286,7 @@
                 </article>
               </div>
               <!-- </article>#post-5 -->
-              <div class="col-md-6 item mb-4">
+              <div class="col-12 col-lg-6 item mb-4">
                 <article id="post-1" class="post-1 post__item">
                   <div class="card">
                     <div class="card-header p-0 position-relative">
@@ -325,7 +326,7 @@
                 </article>
               </div>
               <!-- </article>#post-6 -->
-              <div class="col-md-6 item mb-4">
+              <div class="col-12 col-lg-6 item mb-4">
                 <article id="post-1" class="post-1 post__item">
                   <div class="card">
                     <div class="card-header p-0 position-relative">
@@ -389,87 +390,89 @@
             <div class="sidebar right-sidebar">
               <aside id="secondary" class="widget-area">
                 <section id="search-2" class="widget widget_search">
-                  <form role="search" method="get" class="search-form" action="https://wp.w3layouts.com/diner/">
-                    <label>
-                      <span class="screen-reader-text">Search for:</span>
-                      <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                    </label>
-                    <input type="submit" class="search-submit" value="Search">
+                  <form class="d-flex mt-5 justify-content-center" role="search">
+                    <div class="bg">
+                      <input class="form-control me-4" type="search" placeholder="Enter your text" aria-label="Search">
+                    </div>
+                    <button class="btn" type="button">Search</button>
                   </form>
                 </section>
-                <section id="recent-posts-2" class="widget widget_recent_entries">
-                  <h2 class="widget-title">Recent Posts</h2>
-                  <ul>
-                    <li>
-                      <a href="#">Hello
-                        world!</a>
-                    </li>
-                    <li>
-                      <a
-                        href="#">The
-                        Best Cookie Recipes To Bake This Weekend
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#">The
-                        Best Cookie Recipes To Bake This Weekend</a>
-                    </li>
-                    <li>
-                      <a
-                        href="#">The
-                        Best Cookie Recipes To Bake This Weekend</a>
-                    </li>
-                    <li>
-                      <a
-                        href="#">The
-                        Best Cookie Recipes To Bake This Weekend</a>
-                    </li>
-                  </ul>
-
-                </section>
-                <section id="recent-comments-2" class="widget widget_recent_comments">
-                  <h2 class="widget-title">Recent Comments</h2>
-                  <ul id="recentcomments">
-                    <li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/"
-                          class="url" rel="ugc external nofollow">A WordPress Commenter</a></span> on <a
-                        href="##comment-1">Hello
-                        world!</a></li>
-                    <li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/"
-                          class="url" rel="ugc external nofollow">A WordPress Commenter</a></span> on <a
-                        href="#">Hello
-                        world!</a></li>
-                  </ul>
-                </section>
-                <section id="archives-2" class="widget widget_archive">
-                  <h2 class="widget-title">Archives</h2>
-                  <ul>
-                    <li><a href="#">March 2021</a></li>
-                  </ul>
-
-                </section>
-                <section id="categories-2" class="widget widget_categories">
-                  <h2 class="widget-title">Categories</h2>
-                  <ul>
-                    <li class="cat-item cat-item-2"><a href="#">Drinks</a>
-                    </li>
-                    <li class="cat-item cat-item-3"><a href="#">Food</a>
-                    </li>
-                  </ul>
-
-                </section>
-                <section id="meta-2" class="widget widget_meta">
-                  <h2 class="widget-title">Meta</h2>
-                  <ul>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Entries feed</a></li>
-                    <li><a href="#">Comments feed</a>
-                    </li>
-
-                    <li><a href="https://wordpress.org/">WordPress.org</a></li>
-                  </ul>
-
-                </section>
+                <div class="posts_footer">
+                  <section id="recent-posts-2" class="widget widget_recent_entries">
+                    <h2 class="widget-title">Recent Posts</h2>
+                    <ul>
+                      <li>
+                        <a href="#">Hello
+                          world!</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#">The
+                          Best Cookie Recipes To Bake This Weekend
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#">The
+                          Best Cookie Recipes To Bake This Weekend</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#">The
+                          Best Cookie Recipes To Bake This Weekend</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#">The
+                          Best Cookie Recipes To Bake This Weekend</a>
+                      </li>
+                    </ul>
+  
+                  </section>
+                  <section id="recent-comments-2" class="widget widget_recent_comments">
+                    <h2 class="widget-title">Recent Comments</h2>
+                    <ul id="recentcomments">
+                      <li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/"
+                            class="url" rel="ugc external nofollow">A WordPress Commenter</a></span> on <a
+                          href="##comment-1">Hello
+                          world!</a></li>
+                      <li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/"
+                            class="url" rel="ugc external nofollow">A WordPress Commenter</a></span> on <a
+                          href="#">Hello
+                          world!</a></li>
+                    </ul>
+                  </section>
+                  <section id="archives-2" class="widget widget_archive">
+                    <h2 class="widget-title">Archives</h2>
+                    <ul>
+                      <li><a href="#">March 2021</a></li>
+                    </ul>
+  
+                  </section>
+                  <section id="categories-2" class="widget widget_categories">
+                    <h2 class="widget-title">Categories</h2>
+                    <ul>
+                      <li class="cat-item cat-item-2"><a href="#">Drinks</a>
+                      </li>
+                      <li class="cat-item cat-item-3"><a href="#">Food</a>
+                      </li>
+                    </ul>
+  
+                  </section>
+                  <section id="meta-2" class="widget widget_meta">
+                    <h2 class="widget-title">Meta</h2>
+                    <ul>
+                      <li><a href="#">Log in</a></li>
+                      <li><a href="#">Entries feed</a></li>
+                      <li><a href="#">Comments feed</a>
+                      </li>
+  
+                      <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                    </ul>
+  
+                  </section>
+                </div>
+                
               </aside><!-- #secondary -->
             </div>
           </div>

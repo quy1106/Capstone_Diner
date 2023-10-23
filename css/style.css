@@ -26,10 +26,11 @@ header {
     font-family: 'Quicksand', sans-serif;
 }
 
-header form .form-control{
+header form .form-control {
     position: relative;
-    padding: 5px 50px 5px 20px;
-}
+    padding: 5px 10px;
+    width: 350px;
+  }
 
 /* thay doi vi tri kinh lup */
 header form i:nth-child(2) {
@@ -440,45 +441,12 @@ footer .subcribe .button:hover{
     color: white;
 }
 /* END COPYRIGHT */
-
-/* CONTAINER */
-/* xs */
-@media (min-width: 475px) {
-    .container {
-        max-width: 440px;
+@media (max-width: 820px) {
+  
+    header{
+      padding-top: 15px;
     }
-}
-
-/* sm */
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
+    .container-fluid form input {
+      width: 210px;
     }
-}
-
-/* md */
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-/* lg */
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-/* xl */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1200px;
-    }
-}
+  }

@@ -58,11 +58,7 @@ ul{
     margin: 0;
     padding: 0;
 }
-.container{
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-}
+
 /* HEADER */
 header {
     background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(./../img/banner2.jpg);
@@ -73,23 +69,24 @@ header {
     font-family: 'Quicksand', sans-serif;
 }
 
-header form .form-control{
+header form .form-control {
     position: relative;
-    padding: 5px 50px 5px 20px;
-}
+    padding: 5px 10px;
+    width: 350px;
+  }
 
 /* thay doi vi tri kinh lup */
 header form i:nth-child(2) {
     position: absolute;
-    right: 113px;
+    right: 164px;
     top: 25px;
 }
 
-header form i:last-child {
+/* header form i:last-child {
     position: absolute;
     top: 14px;
     right: -17px;
-}
+} */
 
 /* Tương lai tươi sáng */
 #myBody {
@@ -104,7 +101,7 @@ header form i:last-child {
 }
 
 /* Tương lai u tối */
-.dark #myBody {
+.dark#myBody {
     background-color: #232220;
 }
 
@@ -118,28 +115,13 @@ header form i:last-child {
     display: none;
 }
 
-.dark .navbar input {
-    border: 1px solid transparent;
-}
-
-.dark .navbar input:focus {
-    border: 1px solid transparent;
-    background-color: #232220;
-}
-
-.dark input {
-    background-color: #232220;
-}
-
-.dark input:focus {
-    border: 1px solid #FF6600;
-    background-color: #404040;
-}
-
 .dark #backtohome {
     color: white;
 }
 
+.dark .footer__socials a {
+    background-color: #232220 ;
+}
 
 .dark .subcribe input {
     border: 1px solid transparent;
@@ -156,19 +138,34 @@ header form i:last-child {
     color: white !important;
 }
 
-.dark .skill .title h1{
-    color: #000;
+.dark  i{
+    color: white;
 }
-.dark .footer__socials a{
-    background-color: #232220;
-}
-.team__member a{
-color: #eee;
-}
-.dark .story p, .dark .team__member p{
-    color:#c2d0da
+.dark main .bg input {
+    box-shadow: none;
 }
 
+.dark main .bg input:focus {
+    box-shadow: none;
+}
+
+.dark input {
+    background-color: #232323 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.dark input:focus {
+    border: 1px solid #FF6600 !important;
+    box-shadow: none;
+}
+.dark .ourTeam {
+    background-color: #232220;
+    color: white;
+  }
+  .dark .ourTeam .team__member .team__title {
+      color: white;
+    }
 
 header nav a {
     text-decoration: none;
@@ -185,8 +182,9 @@ header .direction {
 header ol li a {
     color: orange;
 }
-header ol li a:hover {
-    color: #ff6600;
+
+header button{
+    background-color: transparent;
 }
 /* END HEADER */
 
@@ -209,6 +207,9 @@ header ol li a:hover {
 .modal .modal-content a:hover {
     color: #FF6600;
 }
+
+/* END MENU POP UP */
+
 /* STORY */
 .story__about{
     display: flex;
@@ -269,9 +270,7 @@ header ol li a:hover {
     margin: 0;
 }
 /* SKILLS */
-.skill{
-    background-color: #f7f7f7;
-}
+
 .skill__left{
     position: relative;
     padding-right: 15px;
@@ -572,11 +571,17 @@ color: #fff;
     grid-gap: 40px;
 }
 }
-@media (max-width: 800px){
-.story__content .whatwedo {
-    grid-template-columns: 1fr;
-}
-}
+@media (max-width: 820px) {
+    .story__content .whatwedo {
+      grid-template-columns: 1fr;
+    }
+    header{
+      padding-top: 15px;
+    }
+    .container-fluid form input {
+      width: 210px;
+    }
+  }
 @media (max-width: 568px){
 .story__content .whatwedo {
     grid-row-gap: 20px;
@@ -584,49 +589,43 @@ color: #fff;
 }
 }
 @media (max-width: 415px){
-.story__content .whatwedo {
-    grid-template-columns: 1fr;
-}
-}
+        header .container{
+            padding-left: 13px;
+        }
+        header .container-fluid {
+            padding: 0;
+        }
+        header .container-fluid a{
+            font-size: 21px !important;
+        }
+        
+        header .container-fluid form{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        header .container-fluid form .btn{
+            padding: 0;
+        }
+        .container-fluid form input {
+            height: 45px;
+            width: 160px;
+            font-size: 14px;
+        } 
+        header form i:nth-child(2) {
+            position: absolute;
+            right: 66px;
+            top: 21px;
+        }
+        
+        main .content h1{
+            font-size: 110px;
+        }
+        main input{
+            width: 195px !important;
+        }
+        
+        }
+        
 
-/* CONTAINER */
-/* xs */
-@media (min-width: 475px) {
-    .container {
-        max-width: 440px;
-    }
-}
 
-/* sm */
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-/* md */
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-/* lg */
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-/* xl */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1200px;
-    }
-}
