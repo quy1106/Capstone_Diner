@@ -561,36 +561,40 @@ header .banner .banner-content .banner-info .btn {
   font-family: "Pacifico", cursive;
 }
 
-.popular .row {
-  gap: 30px;
-}
+
 
 .popular .title h3 {
   font-size: 40px;
 }
 
-.row .col img {
+ .popular .row img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
+
 }
 
-.popular .col {
+.popular .col-6 {
   position: relative;
+  padding: 20px;
 }
 
-.popular .col .text {
+.popular .text {
   position: absolute;
-  bottom: 35px;
-  left: 59px;
+  bottom: 24px;
+  left: 30px;
+  z-index: 1;
 }
 
-.popular .col .text h6 {
-  font-size: 30px;
+.popular  .text h6 {
+  font-size: 28px;
   color: white;
   font-weight: 700;
 }
 
-.popular .col .text span {
+.popular  .text span {
   font-size: 20px;
   color: yellow;
   font-weight: 700;
@@ -649,6 +653,10 @@ header .banner .banner-content .banner-info .btn {
 .food .container .row {
   gap: 29px;
   padding: 6px 27px 28px 10px;
+}
+
+.food .text{
+  text-align: left;
 }
 
 /* END FOOD */
@@ -841,7 +849,6 @@ movie .movie__bg .button__bg .btn::after {
 }
 
 /* END MOVIE */
-
 /* BLOG POST */
 .blog {
   padding: 85px 0;
@@ -875,6 +882,7 @@ movie .movie__bg .button__bg .btn::after {
 .blog .col__bg img {
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 .blog .col__bg .col__name {
