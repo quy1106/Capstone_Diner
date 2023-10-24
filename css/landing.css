@@ -1619,8 +1619,8 @@ footer .footer__logo h5 a:hover {
     line-height: 5px;
   }
 
-  .popular .col .text h6 {
-    font-size: 13px;
+  .popular  .text h6 {
+    font-size: 20px;
   }
   .popular .col .text span {
     font-size: 12px;
