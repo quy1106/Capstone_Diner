@@ -603,7 +603,7 @@ header .banner .banner-content .banner-info .btn {
 
 /* FOOD */
 .food {
-  padding: 85px 0;
+  padding-bottom: 85px;
   position: relative;
   font-family: "Quicksand", sans-serif;
 }
@@ -937,7 +937,7 @@ movie .movie__bg .button__bg .btn::after {
 
 /* TESTIMONIALS */
 .testical {
-  padding: 85px 0;
+  padding-bottom: 85px;
   font-family: "Quicksand", sans-serif;
   position: relative;
 }
@@ -1358,8 +1358,8 @@ footer .footer__logo h5 a:hover {
     line-height: 5px;
   }
 
-  .popular .col .text h6 {
-    font-size: 13px;
+  .popular  .text h6 {
+    font-size: 20px;
   }
   .popular .col .text span {
     font-size: 12px;

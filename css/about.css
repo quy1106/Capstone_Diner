@@ -220,8 +220,11 @@ header button{
     
 }
 .about__left{
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
+    
+}
+.about__right{
+    padding-top: 60px;
 }
 .about__left img{
     border-radius: 6px;

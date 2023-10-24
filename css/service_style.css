@@ -272,7 +272,9 @@ header button {
 .food .text{
   text-align: left;
 }
-
+.food .text p{
+  text-align: left;
+}
 .row {
   gap: 29px;
   padding: 6px 27px 28px 10px;

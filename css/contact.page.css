@@ -531,6 +531,11 @@ footer .footer__logo h5 a:hover {
     padding: 0;
   }
 }
+@media (max-width: 768px) {
+  .contact-us .twice-two {
+    grid: none;
+}
+}
 @media (max-width: 415px) {
   header .container {
     padding-left: 13px;
